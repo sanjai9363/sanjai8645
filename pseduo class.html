@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo class</title>
+    <style>
+    p:first-child i{
+  color: blue;
+}
+input[type=text]:enabled{
+    background-color: yellowgreen;
+}
+input[type=text]:disabled{
+    background-color: grey;
+}
+p:first-child{
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <h1>CSSPseudo-class</h1>
+    <h2>CSS - The :first-child Pseudo-class</h2>
+    <main>
+        <p>i am a <i>strong</i> person.i am a <i>strong</i> person</p>
+    <p>i am a <i>strong</i> person.i am a <i>strong</i> person</p>
+    </main>
+   
+    
+    
+    <div>
+        <p>i am a <i>strong</i> person.i am a <i>strong</i> person</p>
+        <p>i am a <i>strong</i> person.i am a <i>strong</i> person</p>
+    </div><hr>
+    <h2>Disabled pseduo class</h2>
+     <form action="action_page.php">
+        First Name: <input type="text" id="fname" value="sanjai"><br>
+        Last Name: <input type="text" id="lname" value="Joseph"><br>
+        country: <input type="text" disabled="disbaled" value="India">
+        <hr>
+        <h2>p:first-child</h2>
+        <main>
+            <p>this paragraph is first child of its parent</p>
+            <p>this paragraph is not first child of its parent</p>
+        </main>
+       
+        <div>
+            <p>this paragraph is first child of its parent</p>
+            <p>this paragraph is not first child of its parent</p>
+        </div>
+        <hr>
+      
+</body>
+</html>

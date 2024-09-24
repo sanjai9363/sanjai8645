@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute</title>
+    <style>
+        a[target=top]{
+            background-color: rgb(255, 255, 0);
+        }
+        a[target=_blank]{
+            background-color: greenyellow;
+        }
+        [title~="flower"]{
+            border: 5px solid yellow;
+            height: 300px;
+            width: 400px;
+            border-radius: 50px;
+        }
+        [title~="tree"]{
+            margin-top: 50px;
+            border: 10px solid red;
+            border-radius: 100px;
+            height: 200px;
+            width: 200px;
+            
+
+        }
+        [class|="test"]{
+            background-color: aqua;
+        }
+        [class^="top"] {
+            background-color: rgb(235, 40, 192);
+        }
+        [class$=class]{
+            background-color: blueviolet;
+        }
+        [id*="th"]{
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+   <h1>Attribute selectors</h1> 
+<h2>CSS [attribute] Selector</h2>
+   <a href="https://www.google.co.in" target="_blank">Google</a><br>
+   <a href="https://www.instagram.login.in" target="_parent">Instagram</a><br>
+   <a href="https://www.meesho.com/" target="top">Meshoo</a>
+   <hr>
+<h2>CSS [Attribute="value"] Selectors</h2>
+   <a href="https://www.google.co.in" target="_blank">Google</a><br>
+   <a href="https://www.instagram.login.in" target="_parent">Instagram</a><br>
+   <a href="https://www.meesho.com/" target="tile">Meshoo</a>
+   <hr>
+   <h2>CSS [attribute~="value"] Selector</h2>
+   <img src="https://th.bing.com/th/id/OIP.8p5Nv5LwndZYaGFSReKJMgAAAA?rs=1&pid=ImgDetMain" title="flower">
+    <br>
+   <img src="https://th.bing.com/th/id/OIP.YWbujQuYU3emKSjvBsYY7AHaEo?rs=1&pid=ImgDetMain" title="tree">
+   <hr>
+<h2> The [attribute|="value"] selector</h2>
+   <p class="test-box">Hello Everyone</p>
+   <div class="test-1">Welcome</div>
+   <p class="textcontent">this is a paragraph</p>
+   <hr>
+<h2>The [attribute^="value"] selector</h2>
+   <p class="top-box">Hello Everyone</p>
+   <div class="top-1">Welcome</div>
+   <p class="topcontent">this is a paragraph</p>
+   <hr>
+   <h2>The [attribute$="value"] selector</h2>
+   <p class="first-class">Hello Everyone</p>
+   <div class="second-class">Welcome</div>
+   <p class="third">this is a paragraph</p>
+   <p class="fourthclass">Hello world</p>
+   <hr>
+<h2>CSS [attribute*="value"] Selector</h2>
+
+   <p class="one">Hello Everyone</p>
+   <div class="two">Welcome</div>
+   <p id="three">this is a paragraph</p>
+   <p class="four">Hello world</p>
+   <hr>
+
+
+</body>
+</html>
