@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(181, 42, 216);
+      }
+      .parent {
+        display: flex;
+        justify-content: space-evenly;
+        min-height: 100vh;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .box {
+        height: 350px;
+        width: 250px;
+        background-color: white;
+        border-radius: 10px;
+        transition: filter 0.3s ease;
+      }
+      .class {
+        height: 150px;
+        width: 100%;
+        background-color: rgb(245, 229, 10);
+        border-radius: 10px 10px 50% 50%;
+        text-align: center;
+        font-size: 100px;
+        color: whitesmoke;
+      }
+      .two {
+        background-color: blueviolet;
+      }
+      .three {
+        background-color: rgb(230, 31, 64);
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      .btn {
+        width: 150px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        padding: 8px;
+        position: relative;
+        left: 36px;
+        top: 30px;
+      }
+
+      /* Hover effect scoped to individual box elements */
+      .box:hover ~ .box,
+      .box:hover + .box {
+        filter: blur(5px);
+      }
+
+      .box:hover {
+        filter: none; /* Remove blur on the hovered box */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1">
+        <div class="class one">1</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+          beatae nostrum minima? Vitae, excepturi dicta.
+        </p>
+        <div class="btn">READ MORE</div>
+      </div>
+
+      <div class="box box2">
+        <div class="class two">2</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum totam
+          veniam voluptatem nesciunt dicta iure.
+        </p>
+        <div class="btn">READ MORE</div>
+      </div>
+
+      <div class="box box3">
+        <div class="class three">3</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non adipisci
+          temporibus impedit possimus, blanditiis excepturi.
+        </p>
+        <div class="btn">READ MORE</div>
+      </div>
+    </div>
+  </body>
+</html>
